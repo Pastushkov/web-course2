@@ -20,17 +20,17 @@
         <fieldset>
             <legend>General Info</legend>
             <label for="username">Your Name</label>
-            <input id="username" name="username" type="text" value="Vasya Ivanov">
+            <input id="username" name="username" type="text" placeholder="Ex: Vasya Ivanov" required>
             <label for="useraddress">Your Adress</label>
-            <input id="useraddress" name="useraddress" type="text" value="Ohienka, 82">
+            <input id="useraddress" name="useraddress" type="text" placeholder="Ex: Ohienka, 82" required>
         </fieldset>
 
         <fieldset>
             <legend>Pizza Info</legend>
 
-            <select id="pizzaname" name="pizzaname">
-                    <option value="pepperoni">Pepperoni</option>
+            <select id="pizzaname" name="pizzaname">                    
                     <option value="Cheese">Only with cheese</option>
+                    <option value="pepperoni" selected>Pepperoni</option>
                     <option value="mexina">Mexicana</option>
             </select>
 
@@ -39,13 +39,13 @@
         </fieldset>
 
         <fieldset>
-            <input type="radio" name="pizzasize" value="s">Small
-            <input type="radio" name="pizzasize" value="m">Medium
-            <input type="radio" name="pizzasize" value="l">Large
+            <input type="radio" name="pizzasize" value="s" checked>Small
+            <input type="radio" name="pizzasize" value="m ">Medium
+            <input type="radio" name="pizzasize" value="l ">Large
         </fieldset>
 
-        <div id="button">
-            <input type="submit" value="Get My Pizza!">
+        <div id="button ">
+            <input type="submit" value="Get My Pizza! ">
         </div>
 
     </form>
