@@ -6,17 +6,21 @@
     <title>TITLE</title>
     <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="styles/main.css"> </head>
+<script type="text/javascript" src="scripts/main.js"></script>
 
-<body onload="createImage();">
-    <canvas id="my_canvas" width="150" height="150"></canvas>
-    <script type="text/javascript">
-        function createImage() {
-            var canvas = document.getElementById("my_canvas");
-            var ctx = canvas.getContext("2d");
-            ctx.fillStyle = "rgb(100,0,0)";
-            ctx.fillRect(20, 10, 50, 70);
-        }
-    </script>
+<body onload="createSquares(); createRectangles(); createDiagrama();">
+
+    <figure>
+        <canvas id="square" width="110" height="160"></canvas>a)
+    </figure>
+
+    <figure>
+        <canvas id="rectangle" width="240" height="160"></canvas>б)
+    </figure>
+    <figure>
+        <canvas id="diagrama" width="70" height="150"></canvas>в)
+    </figure>
+
 </body>
 
 </html>
