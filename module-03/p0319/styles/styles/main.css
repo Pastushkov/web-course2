@@ -1,0 +1,20 @@
+/*article,
+section {
+    border: thin black solid;
+    padding: 10px 300px 30px 20px;
+}
+
+article {
+    padding: 20px 40px;
+}
+
+section {
+    margin: 50px;
+}*/
+
+article,
+section {
+    border: thin black solid;
+    margin: 10px 20px;
+    padding: 20px 10px;
+}
