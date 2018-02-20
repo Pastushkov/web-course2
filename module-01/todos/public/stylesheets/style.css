@@ -1,0 +1,26 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    color: gold;
+    background-color: blue;
+}
+
+.checked span {
+    text-decoration: line-through;
+}

@@ -3,11 +3,11 @@ function createDiagrama() {
     var ctx = canvas.getContext("2d");
     var data = [73.2, 72.3, 71.6, 70.9, 60.9];
     ctx.fillStyle = "rgb(0,200,0)"
-    ctx.fillRect(40, 100, 50, 500 - 140);
-    ctx.fillRect(100, 130, 50, 500 - 170);
-    ctx.fillRect(160, 160, 50, 500 - 200);
-    ctx.fillRect(220, 190, 50, 500 - 230);
-    ctx.fillRect(280, 140, 50, 500 - 180);
+    ctx.fillRect(40, 100, 50, 360);
+    ctx.fillRect(100, 130, 50, 330);
+    ctx.fillRect(160, 160, 50, 300);
+    ctx.fillRect(220, 190, 50, 270);
+    ctx.fillRect(280, 140, 50, 320);
 
     ctx.fillStyle = "black";
     ctx.lineWidht = 1.0;
