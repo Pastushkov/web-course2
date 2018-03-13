@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body onload="demo()">
+    <script>
+        function demo() {
+            var str1 = "<table>";
+            for (var i = 1; i < 5; i++) {
+                var str3 = "";
+                switch (i) {
+                    case 1:
+                        for (var j = 1; j < 5; j++)
+                            str3 += "<td>" + j + "</td>";
+                        break;
+                    case 2:
+                        for (var j = 1; j < 5; j++)
+                            str3 += "<td>" + ((j === 2) ? "1" : "") + "</td>";
+                        break;
+                    case 3:
+                        for (var j = 1; j < 5; j++)
+                            str3 += "<td>" + ((j === 3) ? "1" : "") + "</td>";
+                        break;
+                    case 4:
+                        for (var j = 4; j > 0; j--)
+                            str3 += "<td>" + j + "</td>";
+                        break;
+                }
+                str1 += ("<tr>" + str3 + "</tr>");
+            }
+            var bodyElement = document.getElementsByTagName("body")[0];
+            bodyElement.innerHTML += (str1 + "</table>");
+        }
+    </script>
+</body>
+
+</html>
