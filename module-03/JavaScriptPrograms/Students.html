@@ -1,139 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
-<body onload="BestStud()";>
-    <script>        
-            let students= [
-            {
-                "FullName": "ETHELLE",
-                "FirstRat": 10,
-                "SecondRat": 10
-                },
-                {
-	    	"FullName": "ETHELLE",
-	    	"FirstRat": 8,
-		    "SecondRat": 12
-	        },
-            {
-	    	"FullName": "GUNDOMER",
-	    	"FirstRat": 1,
-		    "SecondRat": 7
-	        },
-            {
-	    	"FullName": "GOTER",
-	    	"FirstRat": 4,
-		    "SecondRat": 5
-	        },
-            {
-	    	"FullName": "JEINA",
-	    	"FirstRat": 8,
-		    "SecondRat": 10
-	        },
-            {
-	    	"FullName": "ILIA",
-	    	"FirstRat": 9,
-		    "SecondRat": 12
-	        },
-            {
-	    	"FullName": "ETEVEN",
-	    	"FirstRat": 3,
-		    "SecondRat": 10
-	        },
-            {
-	    	"FullName": "RETAR",
-	    	"FirstRat": 2,
-		    "SecondRat": 10
-	        },
-            {
-	    	"FullName": "INARIS",
-	    	"FirstRat": 7,
-		    "SecondRat": 8
-	        },
-            {
-	    	"FullName": "KOKA",
-	    	"FirstRat": 7,
-		    "SecondRat": 9
-	        },
-            {
-	    	"FullName": "HARDERIO",
-	    	"FirstRat": 9,
-		    "SecondRat": 11
-	        },
-            {
-	    	"FullName": "UNILL",
-	    	"FirstRat": 3,
-		    "SecondRat": 8
-	        },
-            {
-	    	"FullName": "LODIG",
-	    	"FirstRat": 4,
-		    "SecondRat": 5
-	        },
-            {
-	    	"FullName": "THUGARDA",
-	    	"FirstRat": 7,
-		    "SecondRat": 9
-	        },
-            {
-	    	"FullName": "TON",
-	    	"FirstRat": 2,
-		    "SecondRat": 11
-	        },
-            {
-	    	"FullName": "HOLSCO",
-	    	"FirstRat": 8,
-		    "SecondRat": 12
-	        },
-            {
-	    	"FullName": "EMSI",
-	    	"FirstRat": 4,
-		    "SecondRat": 9
-	        },
-            {
-	    	"FullName": "STANA",
-	    	"FirstRat": 2,
-		    "SecondRat": 6
-	        },
-            {
-	    	"FullName": "ELDWELD",
-	    	"FirstRat": 3,
-		    "SecondRat": 4
-	        },
-            {
-	    	"FullName": "OCONI",
-	    	"FirstRat": 1,
-		    "SecondRat": 8
-	        },            
-            ];
 
-            function orderByRat(a,b)
-            {
-                return (a.FirstRat+a.SecondRat == b.FirstRat+b.SecondRat)? 0:(a.FirstRat+a.SecondRat > b.FirstRat+b.SecondRat)?-1:1; 
-            }
+<body onload="BestStud()" ;>
+    <script>
+        let students = [{
+            "FullName": "ETHELLE",
+            "FirstRat": 10,
+            "SecondRat": 10
+        }, {
+            "FullName": "ETHELLE",
+            "FirstRat": 8,
+            "SecondRat": 12
+        }, {
+            "FullName": "GUNDOMER",
+            "FirstRat": 1,
+            "SecondRat": 7
+        }, {
+            "FullName": "GOTER",
+            "FirstRat": 4,
+            "SecondRat": 5
+        }, {
+            "FullName": "JEINA",
+            "FirstRat": 8,
+            "SecondRat": 10
+        }, {
+            "FullName": "ILIA",
+            "FirstRat": 9,
+            "SecondRat": 12
+        }, {
+            "FullName": "ETEVEN",
+            "FirstRat": 3,
+            "SecondRat": 10
+        }, {
+            "FullName": "RETAR",
+            "FirstRat": 2,
+            "SecondRat": 10
+        }, {
+            "FullName": "INARIS",
+            "FirstRat": 7,
+            "SecondRat": 8
+        }, {
+            "FullName": "KOKA",
+            "FirstRat": 7,
+            "SecondRat": 9
+        }, {
+            "FullName": "HARDERIO",
+            "FirstRat": 9,
+            "SecondRat": 11
+        }, {
+            "FullName": "UNILL",
+            "FirstRat": 3,
+            "SecondRat": 8
+        }, {
+            "FullName": "LODIG",
+            "FirstRat": 4,
+            "SecondRat": 5
+        }, {
+            "FullName": "THUGARDA",
+            "FirstRat": 7,
+            "SecondRat": 9
+        }, {
+            "FullName": "TON",
+            "FirstRat": 2,
+            "SecondRat": 11
+        }, {
+            "FullName": "HOLSCO",
+            "FirstRat": 8,
+            "SecondRat": 12
+        }, {
+            "FullName": "EMSI",
+            "FirstRat": 4,
+            "SecondRat": 9
+        }, {
+            "FullName": "STANA",
+            "FirstRat": 2,
+            "SecondRat": 6
+        }, {
+            "FullName": "ELDWELD",
+            "FirstRat": 3,
+            "SecondRat": 4
+        }, {
+            "FullName": "OCONI",
+            "FirstRat": 1,
+            "SecondRat": 8
+        }, ];
 
-            function BestStud()
-            {
-                students.sort(orderByRat);
-                let tbl = document.getElementById("BestFive").getElementsByTagName("tbody")[0];
-                let BestFive="";
-                for (let i=1;i<6;i++)                
-                    BestFive+="<tr> <td>"+i+"</td><td>"+ students[i].FullName+"</td> <td>"+students[i].FirstRat+"</td> <td>"+students[i].SecondRat+"</td></tr>";
-                tbl.innerHTML=BestFive;               
-            }
+        function orderByRat(a, b) {
+            return (a.FirstRat + a.SecondRat == b.FirstRat + b.SecondRat) ? 0 : (a.FirstRat + a.SecondRat > b.FirstRat + b.SecondRat) ? -1 : 1;
+        }
+
+        function BestStud() {
+            students.sort(orderByRat);
+            let tbl = document.getElementById("BestFive").getElementsByTagName("tbody")[0];
+            let BestFive = "";
+            for (let i = 1; i < 6; i++)
+                BestFive += "<tr> <td>" + i + "</td><td>" + students[i].FullName + "</td> <td>" + students[i].FirstRat + "</td> <td>" + students[i].SecondRat + "</td></tr>";
+            tbl.innerHTML = BestFive;
+        }
     </script>
 
-    <table id="BestFive" border="1px" cellspacing="0">
-        
+    <table id="BestFive" border="1px" cellspacing="0" class="table">
+
         <thead>
-            <tr><th>Position</th> <th>FullName</th> <th>FirstRat</th> <th>SecondRat</th></tr>
+            <tr>
+                <th>Position</th>
+                <th>FullName</th>
+                <th>FirstRat</th>
+                <th>SecondRat</th>
+            </tr>
         </thead>
         <tbody></tbody>
     </table>
 
 </body>
+
 </html>
