@@ -1,2 +1,0 @@
-# Ecotour
-ecotour
