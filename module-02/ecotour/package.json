@@ -15,7 +15,10 @@
     "hbs": "~4.0.1",
     "mongoose": "^5.0.11",
     "morgan": "~1.9.0",
+<<<<<<< HEAD
     "nodemailer": "^4.6.4",
+=======
+>>>>>>> 091515b4e89ff7eec0a11944706303c12f1e4d83
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
