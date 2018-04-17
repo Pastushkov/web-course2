@@ -1,4 +1,3 @@
-1.
 <!DOCTYPE html>
 <html ng-app="app">
 
@@ -9,23 +8,35 @@
 
 <body ng-controller="pizzaController">
     <div class="container">
-        <h1>Tony'sPizza</h1>
+        <h1>Tony's Pizza</h1>
         <h2>{{model.title}}</h2>
         <h3>Topping Search</h3>
+
         <input type="text" class="form-control" ng-model="model.search">
-        <div ng-hide="model.search">Enter the search criteria above.
+
+        <div class="alert alert-success" role="alert" ng-hide="model.isCloseAlert">Topping added!
+            <button type="button" class="btn btn-default" ng-click="closeAlert()">close</button>
         </div>
-        <div ng-show="model.search" ng-repeat="t in model.availableToppings | filter:model.search">
-            <span ng-click="addTopping(t)">{{t}</span>
+
+        <div class="alert alert-danger" role="alert" ng-show="model.search && noResult()">
+            No result
         </div>
+
+        <div ng-hide="model.search ">Enter the search criteria above.
+        </div>
+
+        <div ng-show="model.search " ng-repeat="t in model.availableToppings | filter:model.search ">
+            <span ng-click="addTopping(t) ">{{t}}</span>
+        </div>
+
         <h3>Selected Toppings</h3>
-        <div ng-repeat="t in model.toppings">{{t}}</div>
+        <div ng-repeat="t in model.toppings ">{{t}}</div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js ">
     </script>
-    <script src="./app/app.js">
+    <script src="./app/app.js ">
     </script>
-    <script src="./app/pizzaController.js">
+    <script src="./app/pizzaController.js ">
     </script>
 </body>
 
